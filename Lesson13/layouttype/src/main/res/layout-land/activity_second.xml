@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="*">
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Привет, MIREA!"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:layout_span="3" />
+
+    <EditText
+        android:id="@+id/editTextNewLife"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="New life for mirea activity!"
+        android:inputType="text" />
+
+    <!-- Добавленный CheckBox, занимает все три столбца -->
+    <CheckBox
+        android:id="@+id/checkBoxSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Сохранить данные"
+        android:minHeight="48dp"
+        android:layout_span="3" />
+
+    <TableRow
+        android:layout_marginTop="16dp">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Button 1"
+            android:contentDescription="Button 1" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Button 2"
+            android:contentDescription="Button 2" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Button 3"
+            android:contentDescription="Button 3" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Button 4"
+            android:contentDescription="Button 4" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Button 5"
+            android:contentDescription="Button 5" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Button 6"
+            android:contentDescription="Button 6" />
+    </TableRow>
+</TableLayout>
