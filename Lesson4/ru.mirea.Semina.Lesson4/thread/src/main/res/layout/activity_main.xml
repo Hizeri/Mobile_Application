@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Информация о главном потоке -->
+    <TextView
+        android:id="@+id/textViewThreadInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Информация о потоке"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Поля для ввода -->
+    <EditText
+        android:id="@+id/editTextHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Общее количество пар за месяц"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Количество учебных дней"
+        android:inputType="number"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка расчёта среднего (работает в фоновом потоке) -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать среднее"
+        android:layout_marginTop="24dp" />
+
+    <!-- Кнопка для демонстрации долгой операции -->
+    <Button
+        android:id="@+id/buttonBlocking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Запустить долгую операцию"
+        android:layout_marginTop="16dp" />
+
+    <!-- Результат расчёта среднего -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:textSize="18sp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
