@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Главная" />
+    <item
+        android:id="@+id/nav_data"
+        android:title="Отрасль" />
+    <item
+        android:id="@+id/nav_webview"
+        android:title="Браузер" />
+    <item
+        android:id="@+id/nav_background_task"
+        android:title="Фоновая задача" />
+    <!-- Новые пункты для аппаратных возможностей -->
+    <item
+        android:id="@+id/nav_accelerometer"
+        android:title="Акселерометр" />
+    <item
+        android:id="@+id/nav_camera"
+        android:title="Камера" />
+    <item
+        android:id="@+id/nav_audio"
+        android:title="Диктофон" />
+</menu>
