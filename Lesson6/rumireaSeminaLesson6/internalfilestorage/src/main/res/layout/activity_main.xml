@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Памятная дата в истории России"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дата, например: 12 апреля 1961 года"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Описание события"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonSaveFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить в файл"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonReadFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прочитать файл"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/textViewFileContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Содержимое файла появится здесь"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

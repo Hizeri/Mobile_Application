@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Профиль пользователя"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваше имя"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Группа"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Любимая тема / животное / герой"
+            android:inputType="text"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить профиль"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/textViewProfileResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Данные профиля пока не сохранены"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

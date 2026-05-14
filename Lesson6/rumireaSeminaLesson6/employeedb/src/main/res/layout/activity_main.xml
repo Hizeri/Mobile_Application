@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="База данных супергероев"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя героя"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editTextPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Суперспособность"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editTextUniverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вселенная, например Marvel или DC"
+            android:inputType="text"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonSaveHero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить героя"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonShowHeroes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Показать всех героев"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/textViewHeroes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Список героев появится здесь"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
